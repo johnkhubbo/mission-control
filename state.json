@@ -9,7 +9,14 @@
     },
     {
       "id": "task-002",
-      "title": "ConnectAI Social System - Airtable Base Setup",
+      "title": "ConnectAI Airtable Base - Stage 1 & 2",
+      "status": "completed",
+      "due": "2026-03-05",
+      "agent": "Larrabee"
+    },
+    {
+      "id": "task-003",
+      "title": "ConnectAI Airtable Base - Stage 3 (Automations)",
       "status": "in-progress",
       "due": "2026-03-05",
       "agent": "Larrabee"
@@ -21,7 +28,7 @@
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T20:30:00Z"
+      "next": "2026-03-05T21:00:00Z"
     }
   ],
   "documents": [
@@ -48,28 +55,28 @@
   ],
   "activity": [
     {
-      "time": "20:20 UTC",
-      "event": "Airtable Stage 2 complete: Posts table (33 fields, 7 records, placeholder data)",
+      "time": "20:50 UTC",
+      "event": "Airtable Stage 2 complete: Posts table with 33 fields + placeholder data",
       "type": "success"
     },
     {
-      "time": "12:44 UTC",
-      "event": "Airtable Stage 3 started: Automation setup instructions provided",
-      "type": "update"
-    },
-    {
-      "time": "12:14 UTC",
-      "event": "Airtable Stage 1 complete: Reference Image Library (10 images, scoring logic)",
+      "time": "12:38 UTC",
+      "event": "Airtable Stage 1 complete: Reference Image Library table operational",
       "type": "success"
     },
     {
       "time": "11:40 UTC",
       "event": "Corrected Mission Control URL in all documentation",
       "type": "update"
+    },
+    {
+      "time": "09:35 UTC",
+      "event": "Mission Control rebuilt with local state (no external deps)",
+      "type": "success"
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T20:20:00Z",
+    "lastUpdated": "2026-03-05T20:50:00Z",
     "version": "0.2.0"
   }
 }

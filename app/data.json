@@ -1,0 +1,7 @@
+{
+  "tasks": [{"id":1,"title":"AI SMB Newsletter v1","status":"completed","due":"2026-03-05","agent":"Larrabee"}],
+  "approvals": [{"id":1,"title":"Cron Setup","status":"pending","requested":"2026-03-05"}],
+  "schedules": [{"id":1,"title":"Daily Newsletter","time":"8AM Melbourne","next":"2026-03-06"}],
+  "documents": [{"id":1,"title":"Brief-Mar5.md","generated":"2026-03-05"}],
+  "activity": [{"time":"08:39 UTC","event":"Newsletter generated","type":"success"}]
+}

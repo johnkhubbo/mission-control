@@ -1,9 +1,9 @@
 {
   "tasks": [
     {
-      "id": "task-001",
-      "title": "Mission Control Real-Time Integration",
-      "status": "completed",
+      "id": "task-002",
+      "title": "ConnectAI Social System - Airtable Base Build",
+      "status": "in-progress",
       "due": "2026-03-05",
       "agent": "Larrabee"
     }
@@ -14,7 +14,7 @@
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T12:00:00Z"
+      "next": "2026-03-05T13:20:00Z"
     }
   ],
   "documents": [
@@ -41,6 +41,16 @@
   ],
   "activity": [
     {
+      "time": "12:44 UTC",
+      "event": "ConnectAI: Stage 2 (Posts Table) complete - 33 fields + placeholder data",
+      "type": "success"
+    },
+    {
+      "time": "12:14 UTC",
+      "event": "ConnectAI: Stage 1 (Reference Image Library) complete - 10 records",
+      "type": "success"
+    },
+    {
       "time": "11:40 UTC",
       "event": "Corrected Mission Control URL in all documentation",
       "type": "update"
@@ -49,20 +59,10 @@
       "time": "09:35 UTC",
       "event": "Mission Control rebuilt with local state (no external deps)",
       "type": "success"
-    },
-    {
-      "time": "09:32 UTC",
-      "event": "Removed external database dependencies",
-      "type": "update"
-    },
-    {
-      "time": "09:25 UTC",
-      "event": "Switched to Claude Sonnet 4.5",
-      "type": "success"
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T11:40:00Z",
+    "lastUpdated": "2026-03-05T12:50:00Z",
     "version": "0.2.0"
   }
 }

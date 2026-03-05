@@ -9,26 +9,33 @@
     },
     {
       "id": "task-002",
-      "title": "ConnectAI Airtable Base - Stage 1 & 2",
+      "title": "Airtable CAI Social Media Base - Reference Image Library",
       "status": "completed",
       "due": "2026-03-05",
       "agent": "Larrabee"
     },
     {
       "id": "task-003",
-      "title": "ConnectAI Airtable Base - Stage 3 (Automations)",
-      "status": "in-progress",
+      "title": "Airtable CAI Social Media Base - Posts Table",
+      "status": "completed",
       "due": "2026-03-05",
       "agent": "Larrabee"
     }
   ],
-  "approvals": [],
+  "approvals": [
+    {
+      "id": "approval-001",
+      "title": "Airtable Automations Setup (Stage 3)",
+      "status": "pending",
+      "requested": "2026-03-05T12:44:00Z"
+    }
+  ],
   "schedules": [
     {
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T21:00:00Z"
+      "next": "2026-03-05T22:30:00Z"
     }
   ],
   "documents": [
@@ -49,19 +56,24 @@
     },
     {
       "id": "doc-004",
-      "title": "MEMORY.md (updated with correct Mission Control URL)",
-      "generated": "2026-03-05T11:40:00Z"
+      "title": "Airtable automation instructions (Stage 3)",
+      "generated": "2026-03-05T12:44:00Z"
     }
   ],
   "activity": [
     {
-      "time": "20:50 UTC",
-      "event": "Airtable Stage 2 complete: Posts table with 33 fields + placeholder data",
+      "time": "12:44 UTC",
+      "event": "Airtable Posts table Stage 2 complete (33 fields, placeholder data)",
       "type": "success"
     },
     {
       "time": "12:38 UTC",
-      "event": "Airtable Stage 1 complete: Reference Image Library table operational",
+      "event": "Airtable Posts table built with all fields and dummy data",
+      "type": "success"
+    },
+    {
+      "time": "12:14 UTC",
+      "event": "Airtable Reference Image Library Stage 1 verified complete",
       "type": "success"
     },
     {
@@ -76,7 +88,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T20:50:00Z",
+    "lastUpdated": "2026-03-05T22:20:00Z",
     "version": "0.2.0"
   }
 }

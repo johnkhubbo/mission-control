@@ -1,0 +1,43 @@
+{
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "Mission Control Real-Time Integration",
+      "status": "in-progress",
+      "due": "2026-03-05",
+      "agent": "Larrabee"
+    }
+  ],
+  "approvals": [],
+  "schedules": [
+    {
+      "id": "sched-001",
+      "title": "Heartbeat Check",
+      "time": "Every 30 minutes",
+      "next": "2026-03-05T10:00:00Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-001",
+      "title": "memory/2026-03-05.md",
+      "generated": "2026-03-05T08:43:00Z"
+    }
+  ],
+  "activity": [
+    {
+      "time": "09:32 UTC",
+      "event": "Rebuilding Mission Control with local state",
+      "type": "update"
+    },
+    {
+      "time": "09:25 UTC",
+      "event": "Switched to Claude Sonnet 4.5",
+      "type": "success"
+    }
+  ],
+  "_meta": {
+    "lastUpdated": "2026-03-05T09:32:00Z",
+    "version": "0.2.0"
+  }
+}

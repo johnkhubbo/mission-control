@@ -48,7 +48,7 @@ See `UPDATE_STATE.md` for full schema and update procedures.
 
 ## 🧪 Testing
 
-1. Visit https://mission-control.vercel.app
+1. Visit https://mission-control-nine-sooty.vercel.app/
 2. Check "Last updated" timestamp
 3. Verify source shows "github-state"
 4. Manual refresh button should fetch latest state

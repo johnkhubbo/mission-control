@@ -1,8 +1,15 @@
 {
   "tasks": [
     {
+      "id": "task-001",
+      "title": "Mission Control Real-Time Integration",
+      "status": "completed",
+      "due": "2026-03-05",
+      "agent": "Larrabee"
+    },
+    {
       "id": "task-002",
-      "title": "ConnectAI Social System (Airtable Build)",
+      "title": "ConnectAI Social System - Airtable Base Setup",
       "status": "in-progress",
       "due": "2026-03-05",
       "agent": "Larrabee"
@@ -14,7 +21,7 @@
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T14:50:00Z"
+      "next": "2026-03-05T20:30:00Z"
     }
   ],
   "documents": [
@@ -35,24 +42,24 @@
     },
     {
       "id": "doc-004",
-      "title": "MEMORY.md (updated with Mission Control URL)",
+      "title": "MEMORY.md (updated with correct Mission Control URL)",
       "generated": "2026-03-05T11:40:00Z"
     }
   ],
   "activity": [
     {
-      "time": "14:20 UTC",
-      "event": "ConnectAI: Stage 2 complete (Posts table with 33 fields + dummy data)",
+      "time": "20:20 UTC",
+      "event": "Airtable Stage 2 complete: Posts table (33 fields, 7 records, placeholder data)",
       "type": "success"
     },
     {
       "time": "12:44 UTC",
-      "event": "ConnectAI: Stage 3 automation instructions provided",
+      "event": "Airtable Stage 3 started: Automation setup instructions provided",
       "type": "update"
     },
     {
       "time": "12:14 UTC",
-      "event": "ConnectAI: Stage 1 complete (Reference Image Library)",
+      "event": "Airtable Stage 1 complete: Reference Image Library (10 images, scoring logic)",
       "type": "success"
     },
     {
@@ -62,7 +69,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T14:20:00Z",
+    "lastUpdated": "2026-03-05T20:20:00Z",
     "version": "0.2.0"
   }
 }

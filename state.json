@@ -2,7 +2,7 @@
   "tasks": [
     {
       "id": "task-002",
-      "title": "ConnectAI Social System - Airtable Base Build",
+      "title": "ConnectAI Social System (Airtable Build)",
       "status": "in-progress",
       "due": "2026-03-05",
       "agent": "Larrabee"
@@ -14,7 +14,7 @@
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T13:20:00Z"
+      "next": "2026-03-05T14:50:00Z"
     }
   ],
   "documents": [
@@ -35,34 +35,34 @@
     },
     {
       "id": "doc-004",
-      "title": "MEMORY.md (updated with correct Mission Control URL)",
+      "title": "MEMORY.md (updated with Mission Control URL)",
       "generated": "2026-03-05T11:40:00Z"
     }
   ],
   "activity": [
     {
-      "time": "12:44 UTC",
-      "event": "ConnectAI: Stage 2 (Posts Table) complete - 33 fields + placeholder data",
+      "time": "14:20 UTC",
+      "event": "ConnectAI: Stage 2 complete (Posts table with 33 fields + dummy data)",
       "type": "success"
     },
     {
+      "time": "12:44 UTC",
+      "event": "ConnectAI: Stage 3 automation instructions provided",
+      "type": "update"
+    },
+    {
       "time": "12:14 UTC",
-      "event": "ConnectAI: Stage 1 (Reference Image Library) complete - 10 records",
+      "event": "ConnectAI: Stage 1 complete (Reference Image Library)",
       "type": "success"
     },
     {
       "time": "11:40 UTC",
       "event": "Corrected Mission Control URL in all documentation",
       "type": "update"
-    },
-    {
-      "time": "09:35 UTC",
-      "event": "Mission Control rebuilt with local state (no external deps)",
-      "type": "success"
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T12:50:00Z",
+    "lastUpdated": "2026-03-05T14:20:00Z",
     "version": "0.2.0"
   }
 }

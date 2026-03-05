@@ -1,7 +1,24 @@
 {
-  "tasks": [{"id":1,"title":"AI SMB Newsletter v1","status":"completed","due":"2026-03-05","agent":"Larrabee"}],
-  "approvals": [{"id":1,"title":"Cron Setup","status":"pending","requested":"2026-03-05"}],
-  "schedules": [{"id":1,"title":"Daily Newsletter","time":"8AM Melbourne","next":"2026-03-06"}],
-  "documents": [{"id":1,"title":"Brief-Mar5.md","generated":"2026-03-05"}],
-  "activity": [{"time":"08:39 UTC","event":"Newsletter generated","type":"success"}]
+  "tasks": [
+    {"id":1,"title":"Confirm API Keys (GitHub/Vercel)","status":"completed","due":"2026-03-05","agent":"Larrabee"},
+    {"id":2,"title":"Create Mission Control Repo & Deploy","status":"completed","due":"2026-03-05","agent":"Larrabee"},
+    {"id":3,"title":"Generate AI SMB Newsletter v1","status":"completed","due":"2026-03-05","agent":"Larrabee"}
+  ],
+  "approvals": [
+    {"id":1,"title":"AI Newsletter Cron Setup","status":"pending","requested":"2026-03-05T08:40:00Z"}
+  ],
+  "schedules": [
+    {"id":1,"title":"Daily AI SMB Newsletter","time":"8AM Melbourne (22UTC)","next":"2026-03-06"}
+  ],
+  "documents": [
+    {"id":1,"title":"AI-Brief-2026-03-05.md","generated":"2026-03-05T08:39:00Z"},
+    {"id":2,"title":"memory/2026-03-05.md (Updates)","generated":"2026-03-05T08:45:00Z"}
+  ],
+  "activity": [
+    {"time":"08:45 UTC","event":"Updated Mission Control data (session tasks)","type":"update"},
+    {"time":"08:42 UTC","event":"Seeded dashboard data.json","type":"success"},
+    {"time":"08:40 UTC","event":"Newsletter v1 generated & cron queued","type":"success"},
+    {"time":"08:20 UTC","event":"Vercel deployed: mission-control.vercel.app","type":"deploy"},
+    {"time":"08:16 UTC","event":"GitHub repo created & code pushed","type":"deploy"}
+  ]
 }

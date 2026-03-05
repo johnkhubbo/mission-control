@@ -14,7 +14,7 @@
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T10:00:00Z"
+      "next": "2026-03-05T12:00:00Z"
     }
   ],
   "documents": [
@@ -32,9 +32,19 @@
       "id": "doc-003",
       "title": "mission-control/UPDATE_STATE.md",
       "generated": "2026-03-05T09:35:00Z"
+    },
+    {
+      "id": "doc-004",
+      "title": "MEMORY.md (updated with correct Mission Control URL)",
+      "generated": "2026-03-05T11:40:00Z"
     }
   ],
   "activity": [
+    {
+      "time": "11:40 UTC",
+      "event": "Corrected Mission Control URL in all documentation",
+      "type": "update"
+    },
     {
       "time": "09:35 UTC",
       "event": "Mission Control rebuilt with local state (no external deps)",
@@ -52,7 +62,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T09:35:00Z",
+    "lastUpdated": "2026-03-05T11:40:00Z",
     "version": "0.2.0"
   }
 }

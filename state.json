@@ -3,7 +3,7 @@
     {
       "id": "task-001",
       "title": "Mission Control Real-Time Integration",
-      "status": "in-progress",
+      "status": "completed",
       "due": "2026-03-05",
       "agent": "Larrabee"
     }
@@ -22,12 +22,27 @@
       "id": "doc-001",
       "title": "memory/2026-03-05.md",
       "generated": "2026-03-05T08:43:00Z"
+    },
+    {
+      "id": "doc-002",
+      "title": "mission-control/SETUP.md",
+      "generated": "2026-03-05T09:35:00Z"
+    },
+    {
+      "id": "doc-003",
+      "title": "mission-control/UPDATE_STATE.md",
+      "generated": "2026-03-05T09:35:00Z"
     }
   ],
   "activity": [
     {
+      "time": "09:35 UTC",
+      "event": "Mission Control rebuilt with local state (no external deps)",
+      "type": "success"
+    },
+    {
       "time": "09:32 UTC",
-      "event": "Rebuilding Mission Control with local state",
+      "event": "Removed external database dependencies",
       "type": "update"
     },
     {
@@ -37,7 +52,7 @@
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T09:32:00Z",
+    "lastUpdated": "2026-03-05T09:35:00Z",
     "version": "0.2.0"
   }
 }

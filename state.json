@@ -20,14 +20,29 @@
       "status": "completed",
       "due": "2026-03-05",
       "agent": "Larrabee"
+    },
+    {
+      "id": "task-004",
+      "title": "Airtable CAI Social Media Base - Archive Table + Scheduled Date",
+      "status": "completed",
+      "due": "2026-03-07",
+      "agent": "Larrabee"
+    },
+    {
+      "id": "task-005",
+      "title": "Memory Discipline System",
+      "status": "completed",
+      "due": "2026-03-07",
+      "agent": "Larrabee"
     }
   ],
   "approvals": [
     {
       "id": "approval-001",
       "title": "Airtable Automations Setup (Stage 3)",
-      "status": "pending",
-      "requested": "2026-03-05T12:44:00Z"
+      "status": "approved",
+      "requested": "2026-03-05T12:44:00Z",
+      "resolved": "2026-03-05T14:00:00Z"
     }
   ],
   "schedules": [
@@ -35,14 +50,20 @@
       "id": "sched-001",
       "title": "Heartbeat Check",
       "time": "Every 30 minutes",
-      "next": "2026-03-05T22:30:00Z"
+      "next": "2026-03-07T08:30:00Z"
+    },
+    {
+      "id": "sched-002",
+      "title": "Memory Curation",
+      "time": "Every 2-3 days",
+      "next": "2026-03-10T08:00:00Z"
     }
   ],
   "documents": [
     {
       "id": "doc-001",
       "title": "memory/2026-03-05.md",
-      "generated": "2026-03-05T08:43:00Z"
+      "generated": "2026-03-05T20:51:00Z"
     },
     {
       "id": "doc-002",
@@ -56,39 +77,69 @@
     },
     {
       "id": "doc-004",
-      "title": "Airtable automation instructions (Stage 3)",
+      "title": "Airtable automation instructions",
       "generated": "2026-03-05T12:44:00Z"
+    },
+    {
+      "id": "doc-005",
+      "title": "memory/2026-03-07.md",
+      "generated": "2026-03-07T08:01:00Z"
+    },
+    {
+      "id": "doc-006",
+      "title": "AGENTS.md - Memory Discipline",
+      "generated": "2026-03-07T08:01:00Z"
+    },
+    {
+      "id": "doc-007",
+      "title": "HEARTBEAT.md - Proactive Background Work",
+      "generated": "2026-03-07T08:01:00Z"
     }
   ],
   "activity": [
     {
-      "time": "12:44 UTC",
+      "time": "08:01 UTC",
+      "event": "Memory discipline system formalized (AGENTS.md, HEARTBEAT.md, MEMORY.md)",
+      "type": "success"
+    },
+    {
+      "time": "07:57 UTC",
+      "event": "Airtable Archive table complete (13 fields, 3 dummy records)",
+      "type": "success"
+    },
+    {
+      "time": "07:21 UTC",
+      "event": "Airtable Scheduled Date field added to Posts table",
+      "type": "success"
+    },
+    {
+      "time": "07:12 UTC",
+      "event": "Session model switched to Claude Sonnet 4.5 for Airtable work",
+      "type": "update"
+    },
+    {
+      "time": "12:44 UTC (Mar 5)",
       "event": "Airtable Posts table Stage 2 complete (33 fields, placeholder data)",
       "type": "success"
     },
     {
-      "time": "12:38 UTC",
+      "time": "12:38 UTC (Mar 5)",
       "event": "Airtable Posts table built with all fields and dummy data",
       "type": "success"
     },
     {
-      "time": "12:14 UTC",
+      "time": "12:14 UTC (Mar 5)",
       "event": "Airtable Reference Image Library Stage 1 verified complete",
       "type": "success"
     },
     {
-      "time": "11:40 UTC",
-      "event": "Corrected Mission Control URL in all documentation",
-      "type": "update"
-    },
-    {
-      "time": "09:35 UTC",
+      "time": "09:35 UTC (Mar 5)",
       "event": "Mission Control rebuilt with local state (no external deps)",
       "type": "success"
     }
   ],
   "_meta": {
-    "lastUpdated": "2026-03-05T22:20:00Z",
-    "version": "0.2.0"
+    "lastUpdated": "2026-03-07T08:07:00Z",
+    "version": "0.2.1"
   }
 }

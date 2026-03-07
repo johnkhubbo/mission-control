@@ -73,19 +73,19 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="space-y-8">
-      <div className="flex items-center justify-between">
+    <div className="space-y-4 sm:space-y-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
         <div>
-          <h1 className="text-3xl font-bold text-gray-900">Mission Control</h1>
-          <p className="mt-2 text-gray-600">
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900">Mission Control</h1>
+          <p className="mt-1 sm:mt-2 text-sm sm:text-base text-gray-600">
             Autonomous agent monitoring and approval dashboard
           </p>
         </div>
-        <div className="text-right">
+        <div className="sm:text-right">
           <button 
             onClick={fetchData}
             disabled={isRefreshing}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full sm:w-auto px-3 sm:px-4 py-2 text-sm sm:text-base bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {isRefreshing ? '🔄 Refreshing...' : '🔄 Refresh'}
           </button>
@@ -105,36 +105,36 @@ export default function Dashboard() {
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         <StatCard title="Tasks Today" value={tasksToday.toString()} icon="📋" color="blue" />
         <StatCard title="Pending Approvals" value={pendingApprovals.toString()} icon="⏳" color="yellow" />
         <StatCard title="Active Schedules" value={activeSchedules.toString()} icon="⏰" color="green" />
         <StatCard title="Documents Generated" value={docsGenerated.toString()} icon="📄" color="purple" />
       </div>
 
-      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-        <h2 className="text-xl font-semibold text-gray-900 mb-4">Recent Activity</h2>
+      <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sm:p-6">
+        <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">Recent Activity</h2>
         {data.activity.length === 0 ? (
-          <div className="text-gray-500 text-center py-8">No recent activity</div>
+          <div className="text-gray-500 text-center py-6 sm:py-8 text-sm sm:text-base">No recent activity</div>
         ) : (
           <ul className="space-y-2">
             {data.activity.slice(0,5).map((item, i) => (
-              <li key={i} className="flex items-center space-x-3 p-3 bg-gray-50 rounded">
-                <span className={`w-2 h-2 rounded-full ${item.type === 'success' ? 'bg-green-500' : item.type === 'deploy' ? 'bg-purple-500' : 'bg-blue-500'}`} />
-                <span className="text-sm text-gray-900 font-medium">{item.event}</span>
-                <span className="text-xs text-gray-500 ml-auto">{item.time}</span>
+              <li key={i} className="flex items-start sm:items-center gap-2 sm:gap-3 p-2 sm:p-3 bg-gray-50 rounded">
+                <span className={`w-2 h-2 rounded-full flex-shrink-0 mt-1.5 sm:mt-0 ${item.type === 'success' ? 'bg-green-500' : item.type === 'deploy' ? 'bg-purple-500' : 'bg-blue-500'}`} />
+                <span className="text-xs sm:text-sm text-gray-900 font-medium flex-1 min-w-0">{item.event}</span>
+                <span className="text-xs text-gray-500 whitespace-nowrap flex-shrink-0">{item.time}</span>
               </li>
             ))}
           </ul>
         )}
       </div>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <div className="flex items-start space-x-3">
-          <span className="text-2xl">ℹ️</span>
+      <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4">
+        <div className="flex items-start gap-2 sm:gap-3">
+          <span className="text-xl sm:text-2xl flex-shrink-0">ℹ️</span>
           <div>
-            <h3 className="font-semibold text-blue-900">Mission Control Active</h3>
-            <p className="text-sm text-blue-700 mt-1">
+            <h3 className="text-sm sm:text-base font-semibold text-blue-900">Mission Control Active</h3>
+            <p className="text-xs sm:text-sm text-blue-700 mt-1">
               Larrabee monitoring: {tasksToday} tasks today, {pendingApprovals} approvals pending. Auto-refresh every 30s.
             </p>
           </div>
@@ -153,13 +153,13 @@ function StatCard({ title, value, icon, color }: { title: string; value: string;
   };
 
   return (
-    <div className={`${colorClasses[color]} border rounded-lg p-6`}>
-      <div className="flex items-center justify-between">
-        <div>
-          <p className="text-sm font-medium text-gray-600">{title}</p>
-          <p className="text-3xl font-bold text-gray-900 mt-2">{value}</p>
+    <div className={`${colorClasses[color]} border rounded-lg p-3 sm:p-6`}>
+      <div className="flex items-center justify-between gap-2">
+        <div className="min-w-0 flex-1">
+          <p className="text-xs sm:text-sm font-medium text-gray-600 truncate">{title}</p>
+          <p className="text-xl sm:text-3xl font-bold text-gray-900 mt-1 sm:mt-2">{value}</p>
         </div>
-        <span className="text-4xl">{icon}</span>
+        <span className="text-2xl sm:text-4xl flex-shrink-0">{icon}</span>
       </div>
     </div>
   );
